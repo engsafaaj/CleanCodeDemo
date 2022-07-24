@@ -38,8 +38,8 @@ namespace CleanCodeDemo
             this.buttonStudents = new System.Windows.Forms.Button();
             this.buttonSettings = new System.Windows.Forms.Button();
             this.buttonHelp = new System.Windows.Forms.Button();
-            this.panelContainer = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.statusStrip.SuspendLayout();
             this.flowLayoutPanelNavBar.SuspendLayout();
             this.SuspendLayout();
@@ -144,15 +144,6 @@ namespace CleanCodeDemo
             this.buttonHelp.UseVisualStyleBackColor = true;
             this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
-            // panelContainer
-            // 
-            this.panelContainer.BackColor = System.Drawing.Color.White;
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(0, 77);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1062, 562);
-            this.panelContainer.TabIndex = 4;
-            // 
             // buttonExit
             // 
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -165,6 +156,15 @@ namespace CleanCodeDemo
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // panelContainer
+            // 
+            this.panelContainer.BackColor = System.Drawing.Color.White;
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 77);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1062, 562);
+            this.panelContainer.TabIndex = 4;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -176,6 +176,7 @@ namespace CleanCodeDemo
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clean Code";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.flowLayoutPanelNavBar.ResumeLayout(false);
@@ -195,8 +196,8 @@ namespace CleanCodeDemo
         private System.Windows.Forms.Button buttonStudents;
         private System.Windows.Forms.Button buttonSettings;
         private System.Windows.Forms.Button buttonHelp;
-        private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Button buttonExit;
+        public System.Windows.Forms.Panel panelContainer;
     }
 }
 
